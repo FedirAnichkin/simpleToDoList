@@ -1,0 +1,18 @@
+.main {
+    position: relative;
+    left: 42%;
+    top: 100px;
+    font-size:56px;
+}
+
+.todolist {
+    position: relative;
+    top: 100px;
+    left: 40%;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#deletButton {
+    font-size: large;
+}
