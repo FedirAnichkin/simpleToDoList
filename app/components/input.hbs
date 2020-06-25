@@ -1,0 +1,11 @@
+<input
+    class="new-todo"
+    aria-label='Next task?'
+    placeholder="Next task?"
+    autofocus
+    {{on 'keydown' this.onKeyDown}}
+>
+
+<p>{{ this.text }}</p>
+
+<button id="buttons" type="button" {{on "click" this.add}}>Add</button>
