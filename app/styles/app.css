@@ -8,11 +8,19 @@
 .todolist {
     position: relative;
     top: 100px;
-    left: 40%;
-    font-size: 36px;
+    left: 35%;
+    font-size: 30px;
     font-weight: bold;
 }
 
-#buttons {
+.buttons {
     font-size: large;
+}
+
+:focus,
+.view label:focus,
+.todo-list li .toggle:focus + label,
+.toggle-all:focus + label {
+  /* !important needed because todomvc styles deliberately disable the outline */
+  outline: #d86f95 solid !important;
 }

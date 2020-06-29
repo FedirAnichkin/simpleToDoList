@@ -1,0 +1,23 @@
+<footer class="footer">
+  <span>
+    <strong>{{this.todo.incomplete.length}}</strong>
+      {{if this.todo.todoCountIsOne "todo" "todos"}}
+        left
+  </span>
+ 
+  <ul>
+    <li>
+      <LinkTo @route='index'>All</LinkTo>
+      <LinkTo @route='active'>Active</LinkTo>
+      <LinkTo @route='completed'>Completed</LinkTo>
+    </li>
+  </ul>
+ 
+      <button
+        type='button'
+        class='clear-completed'
+        {{on 'click' this.todo.clearCompleted}}
+      >
+        Clear completed
+      </button>
+</footer>

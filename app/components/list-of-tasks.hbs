@@ -1,0 +1,12 @@
+<li class="{{ if @tod.isCompleted 'completed' }}">
+  <div>
+    <input
+     class="toggle"
+     type="checkbox"
+     aria-label="Toggle the completion of this todo"
+     checked={{ @tod.isCompleted }}
+    {{ on 'change' (fn this.todo.toggleCompletion @tod) }}
+    >
+    <label>{{@tod.text}}</label>
+  </div>
+</li>

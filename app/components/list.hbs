@@ -1,6 +1,8 @@
-<ul>
-    {{#each this.todo.all as |tod|}}
-         <Todo @tod={{tod}} />
-    {{/each}}
-    <!--<button id="buttons" type="button">Delete</button>-->
-</ul>
+<section>
+    <ul>
+        {{#each @todo as |tod|}}
+            <ListOfTasks @tod={{tod}} />
+        {{/each}}
+        <!--<button id="buttons" type="button">Delete</button>-->
+    </ul>
+</section>
